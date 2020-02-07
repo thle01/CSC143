@@ -6,11 +6,9 @@ import java.io.File;
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
-import com.sun.org.apache.bcel.internal.generic.RETURN;
-
 public class ControlPanel extends JPanel {
 	private static final long serialVersionUID = 5L;
-	private static final int SIZE = 4;
+	private static final int SIZE = 8;
 	private String imageLocation;
 	private ImageIcon queenIcon;
 	private Image queenImage;
@@ -31,8 +29,7 @@ public class ControlPanel extends JPanel {
 	}
 
 	public void draw(Graphics _graphics) {
-//		if (search(0, startingColumn)) {
-		if (search(0)) {
+		if (search(0, startingColumn)) {
 			drawQueens(_graphics);
 			drawChessBoard(_graphics);
 		}
@@ -76,7 +73,6 @@ public class ControlPanel extends JPanel {
 		for (int i = 0; i < row; i++) {
 			if (rowPositions[i] == col)
 				return false;
-
 			if (Math.abs(i - row) == Math.abs(rowPositions[i] - col))
 				return false;
 		}
@@ -86,38 +82,23 @@ public class ControlPanel extends JPanel {
 	/************************************************************
 	 * search for a solution starting from a specified column in the first row.
 	 **********************************************************/
-	public boolean search(int row) {
+	public boolean search(int row, int start) {
 		if (row == SIZE)
 			return true;
-
 		boolean allQueensPlaced = false;
-
 		for (int col = 0; col < SIZE; col++) {
-			printBoard(rowPositions);
-			rowPositions[row] = col;
-
+			if (row == 0) {
+				rowPositions[row] = start;
+			} else {
+				rowPositions[row] = col;
+			}
 			if (isSafe(row, col)) {
-				allQueensPlaced = search(row + 1);		
+				allQueensPlaced = search(row + 1, start);
 			}
 			if (allQueensPlaced)
 				return true;
 		}
-		//how can we stop recursive at row 0 and add parameter start
-
 		return false;
 	}
 
-	private static void printBoard(int[] board) {
-		for (int i = 0; i < board.length; i++) {
-			for (int j = 0; j < board.length; j++) {
-				if (j == board[i]) {
-					System.out.print("Q ");
-				} else {
-					System.out.print("_ ");
-				}
-			}
-			System.out.println();
-		}
-		System.out.println("**********");
-	}
 }
