@@ -1,0 +1,64 @@
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Image;
+
+import javax.swing.JPanel;
+
+class ChessPanel extends JPanel {
+    
+    int size;
+    char[][] board;
+
+    public void paintComponent (Graphics g)
+    {
+        // This is required.
+        super.paintComponent (g);
+
+        // First, compute the minimum dimension. The board size can't be larger.
+        Dimension D = this.getSize();
+        int minD = D.height;
+        if (D.width < minD) {
+            minD = D.width;
+        }
+        
+        // This is the size of each square.
+        int cellSize = minD / size;
+
+        // We'll draw an image for each queen.
+        ImageTool im = new ImageTool ();
+        Image queen = im.readImageFile ("queen.jpg");
+        
+        // Now draw the chessboard.
+        boolean isWhite = true;
+        for (int i=0; i<size; i++) {
+            for (int j=0; j<size; j++) {
+
+                // Compute top-left.
+                int topLeftX = j*cellSize;
+                int topLeftY = i*cellSize;
+
+                if (! isWhite) {
+                    // For black (gray) squares:
+                    g.setColor (Color.gray);
+                    g.fillRect (topLeftX, topLeftY, cellSize, cellSize);
+                }
+                g.setColor (Color.black);
+                g.drawRect (topLeftX, topLeftY, cellSize, cellSize);
+
+                // Alternate between black and white, except for end-of-row.
+                if (j < size-1) {
+                    isWhite = !isWhite;
+                }
+
+                if (board[i][j] == 'X') {
+                    // Draw the queen image.
+                    g.drawImage (queen, topLeftX+1, topLeftY+1, cellSize-2, cellSize-2, null);
+                }
+
+            } // inner-for
+        } // outer-for
+
+    }
+
+}
