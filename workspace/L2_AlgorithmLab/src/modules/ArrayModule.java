@@ -45,16 +45,14 @@ public class ArrayModule {
 		return -1;
 	}
 
-	public static void insertionSort(int[] list) {
-		int current;
-		int j;
-		for (int i = 1; i < list.length; i++) {
-			current = list[i];
-			for (j = i; j > 0 && current < list[j - 1]; j--) {
-				list[j] = list[j - 1];
-			}
-			list[j] = current;
-		}
+	public static void insertionSort(int[] list) {    
+	  	for (int i = 1; i < list.length; i++) {
+	  		int j = i;
+	 		while (j > 0 && list[j] < list[j - 1]) {
+				swap(list,j,j-1);
+				j--;
+	 		}
+  		}
 	}
 
 	private static void merge(int[] list, int[] firstHalf, int[] secondHalf) {
