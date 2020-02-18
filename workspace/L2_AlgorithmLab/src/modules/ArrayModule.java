@@ -86,12 +86,9 @@ public class ArrayModule {
 	}
 
 	private static int partition(int[] list, int low, int high) {
-		int midpoint;
-		int pivot;
-		boolean done;
-		midpoint = low + (high - low) / 2;
-		pivot = list[midpoint];
-		done = false;
+		int midpoint = low + (high - low) / 2;
+		int pivot = list[midpoint];
+		boolean done = false;
 
 		while (!done) {
 			while (list[low] < pivot) {
