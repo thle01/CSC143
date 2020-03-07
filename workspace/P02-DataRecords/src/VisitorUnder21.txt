@@ -1,0 +1,20 @@
+Name: 		Jarvis Henry
+First Name: 	Jarvis
+Last Name: 	Henry
+Age: 		19
+ID: 		V-2147
+Will Attend: 	YES
+Hour: 		1
+Minutes: 	32
+Meridiem: 	PM
+
+Name: 		Seth Mills
+First Name: 	Seth
+Last Name: 	Mills
+Age: 		19
+ID: 		V-2078
+Will Attend: 	YES
+Hour: 		8
+Minutes: 	2
+Meridiem: 	AM
+

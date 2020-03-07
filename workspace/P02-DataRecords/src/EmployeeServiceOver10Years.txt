@@ -1,0 +1,20 @@
+Name: 		Wilbur Grant
+First Name: 	Wilbur
+Last Name: 	Grant
+Age: 		41
+ID: 		E-3356
+Will Attend: 	YES
+Office: 	STEM-107
+Salary: 	58795.0
+Years: 		12
+
+Name: 		Jessica Lemon
+First Name: 	Jessica
+Last Name: 	Lemon
+Age: 		51
+ID: 		E-2417
+Will Attend: 	YES
+Office: 	STEM-412
+Salary: 	56245.0
+Years: 		21
+

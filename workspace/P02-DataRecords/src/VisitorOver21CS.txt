@@ -1,0 +1,6 @@
+Name, Ofemi Gomez, First Name, Ofemi, Last Name, Gomez, Age, 24, ID, V-2158, Will Attend, NO,Hour, 2, Minutes, 26, Meridiem, PM
+Name, Ofemi Gomez, First Name, Ofemi, Last Name, Gomez, Age, 24, ID, V-2158, Will Attend, NO,Hour, 2, Minutes, 26, Meridiem, PM
+Name, Ofemi Gomez, First Name, Ofemi, Last Name, Gomez, Age, 24, ID, V-2158, Will Attend, NO,Hour, 2, Minutes, 26, Meridiem, PM
+Name, Samuel Li, First Name, Samuel, Last Name, Li, Age, 27, ID, V-2153, Will Attend, YES,Hour, 2, Minutes, 15, Meridiem, PM
+Name, Joseph Mills, First Name, Joseph, Last Name, Mills, Age, 21, ID, V-2111, Will Attend, NO,Hour, 8, Minutes, 30, Meridiem, AM
+Name, Walter Mitty, First Name, Walter, Last Name, Mitty, Age, 43, ID, V-2123, Will Attend, NO,Hour, 9, Minutes, 34, Meridiem, AM

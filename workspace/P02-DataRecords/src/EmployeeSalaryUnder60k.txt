@@ -1,0 +1,90 @@
+Name: 		Henry Li
+First Name: 	Henry
+Last Name: 	Li
+Age: 		62
+ID: 		E-1318
+Will Attend: 	YES
+Office: 	STEM-337
+Salary: 	59795.0
+Years: 		27
+
+Name: 		Wilbur Grant
+First Name: 	Wilbur
+Last Name: 	Grant
+Age: 		41
+ID: 		E-3356
+Will Attend: 	YES
+Office: 	STEM-107
+Salary: 	58795.0
+Years: 		12
+
+Name: 		Jessica Lemon
+First Name: 	Jessica
+Last Name: 	Lemon
+Age: 		51
+ID: 		E-2417
+Will Attend: 	YES
+Office: 	STEM-412
+Salary: 	56245.0
+Years: 		21
+
+Name: 		Jessup Alcott
+First Name: 	Jessup
+Last Name: 	Alcott
+Age: 		36
+ID: 		E-1022
+Will Attend: 	NO
+Office: 	STEM-224
+Salary: 	56135.0
+Years: 		5
+
+Name: 		Jessup Alcott
+First Name: 	Jessup
+Last Name: 	Alcott
+Age: 		36
+ID: 		E-1022
+Will Attend: 	NO
+Office: 	STEM-224
+Salary: 	56135.0
+Years: 		5
+
+Name: 		Jessup Alcott
+First Name: 	Jessup
+Last Name: 	Alcott
+Age: 		36
+ID: 		E-1022
+Will Attend: 	NO
+Office: 	STEM-224
+Salary: 	56135.0
+Years: 		5
+
+Name: 		Holden Flack
+First Name: 	Holden
+Last Name: 	Flack
+Age: 		34
+ID: 		E-3314
+Will Attend: 	NO
+Office: 	STEM-501
+Salary: 	55875.0
+Years: 		6
+
+Name: 		Winter Bourne
+First Name: 	Winter
+Last Name: 	Bourne
+Age: 		41
+ID: 		E-1353
+Will Attend: 	YES
+Office: 	STEM-224
+Salary: 	26888.0
+Years: 		3
+
+Name: 		Winter Bourne
+First Name: 	Winter
+Last Name: 	Bourne
+Age: 		41
+ID: 		E-1353
+Will Attend: 	YES
+Office: 	STEM-224
+Salary: 	26888.0
+Years: 		3
+

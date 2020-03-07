@@ -1,0 +1,4 @@
+Name, Nevil Pier, First Name, Nevil, Last Name, Pier, Age, 58, ID, E-1214, Will Attend, YES, Office, STEM-219, Salary, 64250.0, Years, 28
+Name, Nevil Pier, First Name, Nevil, Last Name, Pier, Age, 58, ID, E-1214, Will Attend, YES, Office, STEM-219, Salary, 64250.0, Years, 28
+Name, Nevil Pier, First Name, Nevil, Last Name, Pier, Age, 58, ID, E-1214, Will Attend, YES, Office, STEM-219, Salary, 64250.0, Years, 28
+Name, Michael Wang, First Name, Michael, Last Name, Wang, Age, 38, ID, E-5168, Will Attend, NO, Office, STEM-307, Salary, 60125.0, Years, 8
