@@ -15,4 +15,5 @@
     <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.RETURN"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="modules.DModule"/>
+    <fullyQualifiedTypeName name="utility.List"/>
 </qualifiedTypeNameHistroy>

@@ -12,42 +12,22 @@ public class ArrivalTime implements Comparable<ArrivalTime> {
 	}
 	
 	public int compareTo(ArrivalTime other) {
-		if (meridiem == other.meridiem) {
-			if (hour == other.hour) {
-					if (minutes == other.minutes) {
-						return 0;
-					}
-					else if (minutes > other.minutes) {
-						return 1;
-					}
-					else {
-						return -1;
-					}
-				}
-			else if (hour > other.hour) {
-				return 1;
-				}
-			else {
-				return -1;
-			}
-			}
-		else if (meridiem == "AM") {
-			return 1;
-		}
-		return -1;
+		if (meridiem.compareTo(other.meridiem) != 0)
+			return (meridiem.compareTo(other.meridiem));
+		if (hour != other.hour)
+			return hour - other.hour;
+		return minutes - other.minutes;
+		
 	}
 	
 	public boolean equals(Object other) {
-	    if (this == other)
-	        return true;
-	    if (other == null)
-	        return false;
-	    if (getClass() != other.getClass())
-	        return false;
-	    ArrivalTime arrivalTime = (ArrivalTime) other;
-	    return (hour == arrivalTime.hour 
-	    		&& minutes == arrivalTime.minutes 
-	    		&& meridiem.equals(arrivalTime.meridiem));
+		if (other instanceof ArrivalTime) {
+			ArrivalTime object = (ArrivalTime) other;
+			return (hour == object.hour 
+		    		&& minutes == object.minutes 
+		    		&& meridiem.equals(object.meridiem));
+		}
+		return false;
 	}
 	public String toFile() {
 		String s = "";
